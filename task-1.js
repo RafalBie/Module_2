@@ -3,6 +3,19 @@
 // Obiekt "książka adresowa" 
 // Ma mieć: listę wszystkich kontaktów, listę grup kontaktów.
 // Ma umożliwiać: create/read/update/delete , umożliwiać sortowanie listy po frazach
+class AdressBook {
+    constructor(contactList, groupList){
+    this.contactList = contactList;
+    this.groupList = groupList;
+    }
+    createContact(newContact){
+        this.contactList.push(newContact)
+    }
+}
+
+
+const Kowalski = new AdressBook ('Kowalski')
+
 
 // Obiekt charakteryzujący pojedyńczy kontak:
 // Ma mieć: Imie, Nazwisko, adres-emial, datę modyfikacji
@@ -12,3 +25,4 @@
 // Obiekt charakteryzujący grupę kontaktów:
 // Ma mieć: listę kontaktów
 // Ma umożliwiać: Create/Read/Update/Remove (CRUD)
+
